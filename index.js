@@ -20,6 +20,11 @@ app.get('/product', (req,res) => {
     res.send("Products are Now")
 })
 
+app.post('/about', (res,req) => {
+    console.log("post Korsi")
+    res.send("Post Method is working")
+})
+
 app.listen(port, () => {
     console.log(`Server running on ${port}`)
 })
